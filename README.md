@@ -41,7 +41,7 @@ Tujuan yang dapat diraih berdasarkan problem statement diatas, yaitu :
 
 1. Melakukan evaluasi terhadap hasil performa model Machine Learning
 
-2. Metode yang paling sesuai dengan permasalahan ini, yaitu dengan menerapkan metode _Content-Based Filtering_
+2. Metode yang paling sesuai dengan permasalahan ini, yaitu dengan menerapkan metode _Content-Based Filtering_.
 
 ----------------------------------------------------
 
@@ -50,7 +50,51 @@ Tujuan yang dapat diraih berdasarkan problem statement diatas, yaitu :
 Dataset yang digunakan pada proyek ini bersumber dari Kaggle yang dapat diunduh di [Anime Dataset](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database). Dari dataset tersebut, didapatkan informasi sebagai berikut :
 
 - Dataset merupakan data yang memiliki format CSV
-- Terdapat 2 _file_ CSV pada dataset, diantaranya 'anime.csv' dan 'rating.csv'
+- Terdapat 2 _file_ CSV pada dataset, diantaranya 'anime.csv' dan 'rating.csv'. Deskripsi kedua _file_ tersebut masing - masing dapat dideskripsikan di bawah ini.
+
+--------------------------
+
+**Deskripsi Dataset**
+
+**Dataset 'anime.csv'**
+
+Pada dataset 'anime.csv', dapat dideskripsikan beberapa hal, diantaranya :
+
+- Memiliki 1.156 sampel data
+- Di dalam dataset terdapat 7 fitur
+- Dari 7 fitur tersebut, terdapat 4 fitur numerik dan 3 fitur kategorik.
+
+Beberapa variable fitur pada dataset dapat didefinisikan sebagai berikut :
+
+- 	**anime_id** : ID atau identitas konten anime
+- 	**name**     : Nama konten anime
+- 	**genre**    : Genre pada anime 
+- 	**type**     : Jenis platform yang ditayangkan
+- 	**episodes** : Jumlah episod
+- 	**rating**   : Rate atau nilai konten per user
+- 	**members**  : Jumlah member.
+
+**Dataset 'rating.csv'**
+
+Pada dataset 'rating.csv' berisi nilai masing - masing konten anime dari beberapa user yang memiliki karakter berikut :
+
+- Memiliki sejumlah 7.813.737 sampel data
+- Terdapat 3 fitur pada data
+- Pada data 'rating.csv', memiliki 3 fitur yang ketiganya merupakan fitur numerik.
+
+Variable fitur pada dataset masing - masing dapat didefinisikan sebagai berikut :
+
+- 	**anime_id** : ID atau identitas konten anime
+- 	**rating**   : Rate atau nilai konten per user
+- 	**user_id**  : Identitas user.
+
+----------------------------------------------------
+
+### Exploratory Data Analysis
+
+**Univariate Analysis**
+
+
 
 
 

@@ -92,7 +92,73 @@ Variable fitur pada dataset masing - masing dapat didefinisikan sebagai berikut 
 
 ### Exploratory Data Analysis
 
-**Univariate Analysis**
+**Univariate Data Analysis**
+
+Masing - masing fitur dapat direpresentasikan dalam bentuk grafik berikut :
+
+**- Fitur Genre**
+
+![genre](https://user-images.githubusercontent.com/109395960/213077027-ff09b722-48d8-4fbb-bad3-08aa8d9f29de.png)
+
+Pada grafik fitur genre berdasarkan gambar di atas, dapat disimpulkan bahwa terdapat 12 genre dengan kesimpulan genre Comedy berada di urutan teratas sebagai genre paling banyak di dataset, sedangkan genre Supernatural berada di urutan paling bawah. Rincian persentase grafik tersebut dapat dilihat pada tabel dibawah ini.
+
+|               |jumlah Anime | Persentase (%) |
+|---------------|-------------|----------------|
+|Comedy         |         523 |       45.2     |
+|Fantasy        |         114 |        9.9     |
+|Drama          |         107 |        9.3     |
+|Slice of Life  |          99 |        8.6     |
+|Adventure      |          79 |        6.8     |
+|Historical     |          68 |        5.9     |
+|Action         |          53 |        4.6     |
+|Sports         |          44 |        3.8     |
+|Horror         |          21 |        1.8     |
+|Mystery        |          19 |        1.6     |
+|Romance        |          15 |        1.3     |
+|Supernatural   |          14 |        1.2     |
+
+Dapat diketahui bahwa, genre Comedy memiliki porsi sebanyak 45.2%, diikuti genre Fantasy dan Drama dengan masing - masing 9.9% dan 9.3%. Sedangkan genre Supernatural yang memiliki porsi paling sedikit (1.2%).
+
+**- Fitur Rating**
+
+Kemudian pada fitur rating, dapat diperoleh suatu grafik representasi sebagai berikut :
+
+![ratings](https://user-images.githubusercontent.com/109395960/213083816-b342537b-8d53-438b-a9d3-f4ba081ff6cc.png)
+
+Dari grafik fitur rating, dapat ditarik beberapa kesimpulan, diantaranya :
+
+- Rating atau penilaian konten Anime secara keseluruhan bernilai minimum -1 dan maksimum 10
+- Rating paling banyak bernilai masing - masing secara berurutan 8, 7 dan 9. Artinya, user paling banyak memberi penilaian di angka 8, disusul angka 7 dan 9.
+
+----------------------------------------------------
+
+### Data Preparation
+
+Dilakukan beberapa step pada proses Data Preparation, diantaranya :
+
+**- Menggabungkan Dataset**
+
+Dalam proses ini, dataset 'anime.csv' dan 'ratings.csv' digabungkan untuk memperoleh jumlah aktual dari beberapa fitur. Dari langkah ini, dapat diketahui bahwa :
+
+- Jumlah aktual fitur **anime_id** berjumlah 11363 data
+
+- Jumlah rating aktual secara keseluruhan sebanyak 380 data.
+
+**- Mengatasi Missing Value**
+
+Langkah selanjutnya adalah mendapatkan jumlah _missing value_ dengan menggunakan command __isnull().sum()_ dan menghapus _missing value_ (NaN) untuk memperoleh hasil model yang optimal.
+
+**- Sorting Data**
+
+Mengurutkan data dari yang terkecil berdasarkan fitur anime_id
+
+**- Menghapus Data yang Terduplikasi**
+
+Dataset yang kita peroleh terkadang berisi data yang terduplikasi atau kembar. Untuk mengatsi hal tersebut, dilakukan drop pada data yang terduplikasi
+
+**- Konversi Data menjadi Bentuk List**
+
+Untuk mempermudah proses pengolahan data, dilakukan konversi data series menjadi format _list_.
 
 
 

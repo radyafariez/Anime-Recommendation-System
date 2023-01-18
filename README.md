@@ -160,6 +160,44 @@ Dataset yang kita peroleh terkadang berisi data yang terduplikasi atau kembar. U
 
 Untuk mempermudah proses pengolahan data, dilakukan konversi data series menjadi format _list_.
 
+Dengan melakukan langkah - langkah Data Preparation, didapatkan sampel data yang dapat diolah menjadi sebanyak 1143 data.
+
+----------------------------------------------------
+
+### Modelling
+
+Di proyek Recommender System ini telah selesai tahap Data Preparation, tahap selanjutnya memasuki proses _modelling_ dengan beberapa langkah berikut :
+
+**- Inisialisasi dan Vektorisasi TF-IDF**
+
+Pada tahap ini dilakukan vektorisasi dengan fungsi _TfidfVectorizer()_ dan melakukan mapping array dari fitur index integer ke fitur nama untuk mengidentifikasi korelasi judul konten anime dengan genre dan fitment dalam bentuk matriks. Pada tahap ini, output yang dihasilkan berupa _list_ dari sejumlah genre pada konten dan korelasi berupa matriks.
+
+**- Cosine Similarity**
+
+Dilakukan pengukuran tingkat kesamaan antara kedua vektor pada matriks berdasarkan hasil pada tahap sebelumnya. 
+
+**- Membuat Fungsi Anime Recommendation**
+
+Melakukan konversi dataframe ke format NumPy dan mendefinisikan fungsi _animes_recommendation_ dengan melakukan pengambilan data menggunakan _agpartition_  untuk melakukan partisi secara tidak langsung. Lalu dilakukan pengambilan data dengan angka similarity terbesar dan melakukan drop pada titel konten agar titel tersebut tidak muncul di dalam daftar rekomendasi.
+
+### Result
+
+Setelah melakukan modelling, dilakukan pengujian pada salah satu sampel konten Anime secara acak. Dalam hal ini, dilakukan pengujian terhadap konten yang berjudul 'Wolf Daddy' dan menghasilkan output berikut :
+
+|      |id      | titles     | genre   |
+|------|--------|------------|---------|
+|118   |  4099  | Wolf Daddy | Fantasy |
+
+Setelah itu, dilakukan pengujian terhadap rekomendasi konten Anime lainnya yang memilki kesamaan genre dengan memanggil fungsi yang telah didefinisikan (animes_recommendation). Maka, didapatkan output berikut :
+
+
+
+
+
+
+
+
+
 
 
 

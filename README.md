@@ -9,9 +9,9 @@ Berikut merupakan laporan submission project terakhir pada kelas Dicoding (Machi
 
 ### Project Overview
 
-Proyek kali ini akan membahas mengenai Recommendation System untuk Anime. Dapat dikatakan sebuah perusahaan di bidang hiburan/_entertainment_ sedang berfokus untuk mengembangkan web mereka dengan mengembangkan beberapa fitur, salah satunya Recommender System.
+Proyek kali ini akan membahas mengenai Recommendation System untuk Anime, yang mana sebuah perusahaan di bidang hiburan/_entertainment_ sedang berfokus untuk mengembangkan web mereka dengan mengembangkan beberapa fitur, salah satunya Recommender System.
 
-Recommender System itu sendiri (dalam hal ini) merupakan hasil dari pengembangan Machine Learning yang bertujuan untuk memudahkan pengguna aplikasi atau web dalam memilih konten dengan cara menampilkan konten tersebut berdasarkan apa yang yang telah dilihat sebelumnya (Content-Based Filtering). 
+Recommender System merupakan hasil dari pengembangan Machine Learning yang bertujuan untuk memudahkan pengguna aplikasi atau web dalam memilih konten dengan cara menampilkan konten tersebut berdasarkan apa yang yang telah dilihat sebelumnya (Content-Based Filtering). 
 
 ![C4EKjFB](https://user-images.githubusercontent.com/109395960/213359363-d5f6d7c6-5f81-438b-bc44-4814d488a876.jpg)
 
@@ -195,16 +195,16 @@ Setelah itu, dilakukan pengujian terhadap rekomendasi konten Anime lainnya yang 
 
 |   |titles                                             |genre  |
 |---|---------------------------------------------------|-------|
-|0	|Shiawasette Naani	                                |Fantasy|
-|1	|Escha &amp; Logy no Atelier: Tasogare no Sora ...	|Fantasy|
-|2	|Lance N&#039; Masques	                            |Fantasy|
-|3	|Fushigi na Elevator	                              |Fantasy|
-|4	|Spectral Force Chronicle Divergence	              |Fantasy|
-|5	|Santa Company	                                    |Fantasy|
-|6	|Kudan	                                            |Fantasy|
-|7	|Hana to Shounen	                                  |Fantasy|
-|8	|Ukkari Pénélope OVA	                              |Fantasy|
-|9	|on-chan, Yume Power Daibouken!                   	|Fantasy|
+|0  |Shiawasette Naani	                                |Fantasy|
+|1  |Escha &amp; Logy no Atelier: Tasogare no Sora ...	|Fantasy|
+|2  |Lance N&#039; Masques	                        |Fantasy|
+|3  |Fushigi na Elevator	                        |Fantasy|
+|4  |Spectral Force Chronicle Divergence	        |Fantasy|
+|5  |Santa Company	                                |Fantasy|
+|6  |Kudan	                                        |Fantasy|
+|7  |Hana to Shounen	                                |Fantasy|
+|8  |Ukkari Pénélope OVA	                        |Fantasy|
+|9  |on-chan, Yume Power Daibouken!                   	|Fantasy|
 
 Berdasarkan output yang diperoleh, dapat diketahui bahwa model mampu memberikan rekomendasi dengan korelasi berdasarkan genre.
 
@@ -229,9 +229,12 @@ b = number of items we recommended/jumlah item atau konten yang kita rekomendasi
 
 Dengan formula tersebut, kita dapat menghitung hasil dari model yang telah didapat sebelumnya, yaitu :
 
+a = 10 relevant recommendation,
+
+b = 10 items we recommended
+
 $$
 P = {10 \over 10} = 1
 $$
 
 Maka, jika dikonversi menjadi nilai persen akan menjadi 100%.
-

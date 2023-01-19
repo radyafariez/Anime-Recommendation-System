@@ -13,6 +13,8 @@ Proyek kali ini akan membahas mengenai Recommendation System untuk Anime. Dapat 
 
 Recommender System itu sendiri (dalam hal ini) merupakan hasil dari pengembangan Machine Learning yang bertujuan untuk memudahkan pengguna aplikasi atau web dalam memilih konten dengan cara menampilkan konten tersebut berdasarkan apa yang yang telah dilihat sebelumnya (Content-Based Filtering). 
 
+![C4EKjFB](https://user-images.githubusercontent.com/109395960/213359363-d5f6d7c6-5f81-438b-bc44-4814d488a876.jpg)
+
 **Latar Belakang**
 
 Industri film/sinematik di era saat ini menyajikan jenis tontonan yang beragam, dimulai dari jenis penayangan yang dapat dinikmati di TV, Bioskop, bahkan digital product seperti Netflix, Disney+ dan sebagainya. Begitu pula dengan ragam jenis tontonan, saat ini jenis tontonan tidak hanya sebatas _real action_ dan animasi saja, melainkan anime. 

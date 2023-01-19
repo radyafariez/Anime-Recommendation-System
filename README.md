@@ -191,15 +191,45 @@ Setelah melakukan modelling, dilakukan pengujian pada salah satu sampel konten A
 Setelah itu, dilakukan pengujian terhadap rekomendasi konten Anime lainnya yang memilki kesamaan genre dengan memanggil fungsi yang telah didefinisikan (animes_recommendation). Maka, didapatkan output berikut :
 
 
+|   |titles                                             |genre  |
+|---|---------------------------------------------------|-------|
+|0	|Shiawasette Naani	                                |Fantasy|
+|1	|Escha &amp; Logy no Atelier: Tasogare no Sora ...	|Fantasy|
+|2	|Lance N&#039; Masques	                            |Fantasy|
+|3	|Fushigi na Elevator	                              |Fantasy|
+|4	|Spectral Force Chronicle Divergence	              |Fantasy|
+|5	|Santa Company	                                    |Fantasy|
+|6	|Kudan	                                            |Fantasy|
+|7	|Hana to Shounen	                                  |Fantasy|
+|8	|Ukkari Pénélope OVA	                              |Fantasy|
+|9	|on-chan, Yume Power Daibouken!                   	|Fantasy|
+
+Berdasarkan output yang diperoleh, dapat diketahui bahwa model mampu memberikan rekomendasi dengan korelasi berdasarkan genre.
+
+----------------------------------------------------
+
+### Evaluation
+
+Evaluasi yang dilakukan sesuai dengan kategori model pada proyek ini, yaitu metrik _Precision_ atau ketentuan presisi. Maka, evaluasi dapat dilakukan berdasarkan formula berikut :
+
+Recommender System Precision :
+
+$$
+P = {a \over b}
+$$
 
 
+dengan keterangan bahwa, 
 
+a = number of our relevant recommendations/jumlah rekomendasi konten yang relevan,
 
+b = number of items we recommended/jumlah item atau konten yang kita rekomendasikan.
 
+Dengan formula tersebut, kita dapat menghitung hasil dari model yang telah didapat sebelumnya, yaitu :
 
+$$
+P = {10 \over 10} = 1
+$$
 
-
-
-
-
+Maka, jika dikonversi menjadi nilai persen akan menjadi 100%.
 

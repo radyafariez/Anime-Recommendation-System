@@ -229,12 +229,13 @@ b = number of items we recommended/jumlah item atau konten yang kita rekomendasi
 
 Dengan formula tersebut, kita dapat menghitung hasil dari model yang telah didapat sebelumnya, yaitu :
 
-a = 10 relevant recommendation,
+- Variabel **a** berjumlah **10** dari 10 konten yang dihasilkan dari tabel Result yang memiliki kesesuaian genre, dan
+- Variabel **b** merupakan 10 output konten yang dihasilkan dari tabel Result.
 
-b = 10 items we recommended
+maka,
 
 $$
 P = {10 \over 10} = 1
 $$
 
-Maka, jika dikonversi menjadi nilai persen akan menjadi 100%.
+Jadi, jika dikonversi menjadi nilai persen akan menjadi 100%.
